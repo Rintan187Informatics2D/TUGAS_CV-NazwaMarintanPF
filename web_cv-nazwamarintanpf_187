@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>CV Online</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f6f8;
+}
+.cv{
+    max-width:800px;
+    margin:30px auto;
+    background:white;
+    display:flex;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+.left{
+    width:30%;
+    background:#2c3e50;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+.left img{
+    width:120px;
+    border-radius:50%;
+    margin-bottom:10px;
+}
+.left h2{margin:10px 0 5px}
+.left p{font-size:14px}
+
+.right{
+    width:70%;
+    padding:25px;
+}
+.section{
+    margin-bottom:20px;
+}
+.section h3{
+    margin-bottom:8px;
+    color:#2c3e50;
+    border-bottom:2px solid #2c3e50;
+    display:inline-block;
+}
+ul{padding-left:18px}
+button{
+    padding:8px 15px;
+    border:none;
+    background:#2c3e50;
+    color:white;
+    cursor:pointer;
+}
+button:hover{background:#1a252f}
+</style>
+</head>
+
+<body>
+
+<div class="cv">
+
+    <div class="left">
+        <img src="https://via.placeholder.com/150">
+        <h2>Nazwa Fardila</h2>
+        <p>Mahasiswa</p>
+        <hr>
+        <p>Email:<br>nazwa@email.com</p>
+        <p>HP:<br>08xxxxxxxx</p>
+        <p>Alamat:<br>Indonesia</p>
+    </div>
+
+    <div class="right">
+
+        <div class="section">
+            <h3>Profil</h3>
+            <p>Saya adalah mahasiswa yang memiliki minat di bidang teknologi informasi dan pengembangan web.</p>
+        </div>
+
+        <div class="section">
+            <h3>Pendidikan</h3>
+            <ul>
+                <li>S1 – Teknik Informatika</li>
+                <li>SMA / SMK</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Keahlian</h3>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Dasar Pemrograman</li>
+                <li>Microsoft Office</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Pengalaman</h3>
+            <p>Pengerjaan tugas kuliah dan proyek website sederhana.</p>
+        </div>
+
+        <button onclick="downloadCV()">Download CV</button>
+    </div>
+
+</div>
+
+<script>
+function downloadCV(){
+    alert("Fitur download CV (simulasi)");
+}
+</script>
+
+</body>
+</html>
